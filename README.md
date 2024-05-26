@@ -7,7 +7,7 @@ Construí essa `API` com o objetivo de melhorar meus conhecimentos em `node.js` 
 Clone o projeto
 
 ```bash
-  git clone https://github.com/ismael-henrique-dev/Grocery-Store.git
+  git clone https://github.com/ismael-henrique-dev/API-sqlite-express-nodejs.git
 ```
 
 Entre no diretório do projeto
