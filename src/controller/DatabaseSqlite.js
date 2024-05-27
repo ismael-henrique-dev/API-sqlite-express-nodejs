@@ -37,6 +37,12 @@ export class DatabaseSqlite {
     )
   }
 
+  async deleteProduct(id) {
+    const db = await openDb()
+
+    await db.run("DELETE FROM Products WHERE id=?", [id])
+  }
+
   async deleteTable() {
     const db = await openDb()
     await db.exec("drop table if exists Products")

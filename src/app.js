@@ -42,7 +42,16 @@ server.put("/:id", async (req, res) => {
     description: description,
   })
 
-  res.status(204).send("Product updated seccessfuççy.")
+  res.status(204).send("Product updated seccessfully.")
+})
+
+//Delete
+server.delete("/:id", async (req, res) => {
+  const videoId = req.params.id
+
+  await database.deleteProduct(videoId)
+
+  res.status(204).send("Product deleted seccessfully.")
 })
 
 server.listen(port, () => {
