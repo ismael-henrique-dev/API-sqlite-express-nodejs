@@ -2,7 +2,6 @@ import { openDb } from "../configDb.js"
 import { randomUUID } from "node:crypto"
 
 export class DatabaseSqlite {
-
   async createTable() {
     const db = await openDb()
     await db.exec(
@@ -24,6 +23,17 @@ export class DatabaseSqlite {
     await db.run(
       `INSERT INTO Products (id, name, price, description) VALUES (?, ?, ?, ?)`,
       [productId, name, price, description]
+    )
+  }
+
+  async updateProduct(id, product) {
+    const db = await openDb()
+
+    const { name, price, description } = product
+
+    await db.run(
+      `UPDATE Products SET name=?, price=?, description=? WHERE id=?`,
+      [name, price, description, id]
     )
   }
 
