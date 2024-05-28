@@ -6,6 +6,7 @@ Construí essa `API` com o objetivo de melhorar meus conhecimentos em `node.js` 
 
 Clone o projeto
 
+
 ```bash
   git clone https://github.com/ismael-henrique-dev/API-sqlite-express-nodejs.git
 ```
@@ -29,6 +30,7 @@ Inicie o servidor
 ```
 
 ## 💻 Tecnologias Utilizadas
+
 - ![Badge React](https://img.shields.io/badge/Nodejs-%E2%9C%94-blue?style=for-the-badge)
 - ![Badge Lucide React](https://img.shields.io/badge/Sqlite-%E2%9C%94-blue?style=for-the-badge)
 - ![Badge React Toastify](https://img.shields.io/badge/Express-%E2%9C%94-blue?style=for-the-badge)  
@@ -39,7 +41,6 @@ Inicie o servidor
 - Remover produtos no banco
 - Buscar produtos no banco
 - Alterar produtos no banco
-
 
 ## 🎓 Aprendizado
 
