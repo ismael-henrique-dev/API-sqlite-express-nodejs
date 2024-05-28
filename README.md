@@ -28,22 +28,17 @@ Inicie o servidor
   npm run dev
 ```
 
-
-
 ## 💻 Tecnologias Utilizadas
-- ![Badge React](https://img.shields.io/badge/React-%E2%9C%94-blue?style=for-the-badge)
-- ![Badge Lucide React](https://img.shields.io/badge/Lucide_React-%E2%9C%94-blue?style=for-the-badge)
-- ![Badge React Toastify](https://img.shields.io/badge/React%20Toastify-%E2%9C%94-blue?style=for-the-badge)  
-- ![Badge Tailwindcss](https://img.shields.io/badge/Tailwindcss-%E2%9C%94-blue?style=for-the-badge)
-- ![Badge TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94-blue?style=for-the-badge)
+- ![Badge React](https://img.shields.io/badge/Nodejs-%E2%9C%94-blue?style=for-the-badge)
+- ![Badge Lucide React](https://img.shields.io/badge/Sqlite-%E2%9C%94-blue?style=for-the-badge)
+- ![Badge React Toastify](https://img.shields.io/badge/Express-%E2%9C%94-blue?style=for-the-badge)  
 
 ## 🛠️ Funcionalidades
 
-- Pesquisa por nome do produto
-- Filtragem por categoria ou preço do produto
-- Adicionar/remover produtos específicos
-- Remover todos os produtos
-- Alterar quantidade de produtos
+- Adicionar produtos no banco
+- Remover produtos no banco
+- Buscar produtos no banco
+- Alterar produtos no banco
 
 
 ## 🎓 Aprendizado
