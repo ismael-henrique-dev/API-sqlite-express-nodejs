@@ -1,6 +1,6 @@
 ## <p align="center">CRUD com node.js | express.js | sqlite</p>
 
-Este projeto é uma aplicação backend que tem como operações CRUD (Create, Read, Update, Delete) usando `Node.js`, `Express` e `SQLite`. A aplicação permite a manipulação de dados em um banco de dados SQLite através de uma `API REST`.
+Este projeto é uma aplicação backend que tem como operações CRUD (Create, Read, Update, Delete) usando `Node.js`, `Express` e `SQLite` para produtos. A aplicação permite a manipulação de dados em um banco de dados SQLite através de uma `API REST`.
 
 ## 📋 Requisitos
 
@@ -68,7 +68,76 @@ O servidor estará rodando em http://localhost:3333.
 
 ## 🛣️ Rotas da API
 
+Abaixo estão as rotas disponíveis na API e suas respectivas funcionalidades.
 
+### Criar um novo produto
+
+O `id` é criado automaticamente pelo servidor através do `UUID`.
+
+**Rota:** POST `/`
+
+Exemplo de Corpo da Requisição:
+
+```json
+{
+ "name": "Notebook",
+ "price": 3400,
+ "description": "8gb ram, 256gb ssd, tela IPS"
+}
+```
+
+Resposta:
+
+**"Product created successfully."**
+
+### Listar todos os produtos
+
+**Rota:** GET `/`
+
+Resposta: 
+
+```json
+[
+ {
+  "id": "bf4826a7-dc48-4de2-b439-401cb1c13606",
+  "name": "Notebook",
+  "price": 3400,
+  "description": "8gb ram, 256gb ssd, tela IPS"
+ },
+ {
+  "id": "893e9a73-2e49-4152-b361-da25ddc12e7b",
+  "name": "Smartphone",
+  "price": 1300,
+  "description": "6gb ram, 128gb inteno, tela IPS"
+ }
+]
+```
+
+### Atualizar um produto
+
+**Rota:** PUT `/:id`
+
+Exemplo de Corpo da Requisição:
+
+```json
+{
+"name": "Notebook (atualizado)",
+"price": 3200,
+"description": "8gb ram, 256gb ssd, tela IPS"
+}
+```
+
+Resposta:
+
+**"Product updated successfully."**
+
+### Deletar um produto
+
+**Rota:** DELETE `/:id`
+
+Resposta:
+
+**"Product deleted seccessfully."**
 
 
 
